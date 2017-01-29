@@ -19,11 +19,18 @@ body {
 }
 
 #home {
-    background: url("../img/korea-japan-background.jpg") no-repeat center center fixed;
+/*    background: url("../img/korea-japan-background.jpg") no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.main-logo {
+    padding-top: 4em;
+    width: 40%;
+
+    margin-left:30%;
 }
 
 .navbar {
@@ -135,12 +142,22 @@ footer {
 }
 
 @media(max-width: 900px) {
+    .main-logo {
+        width: 50%;
+        margin-left: 25%;
+    }
+    
     .navbar-nav {
         font-size: 12px;
     }
 }
 
 @media(max-width:767px) {
+    .main-logo {
+        width:60%;
+        margin-left:20%;
+    }
+    
     .img-portfolio {
         margin-bottom: 15px;
     }
