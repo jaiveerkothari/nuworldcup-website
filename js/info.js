@@ -22,36 +22,36 @@ var hideWWCFix = function() {
 	$("#wwc-fix-list").slideUp();
 }
 
-var fixtures = new Waypoint({
-	element: document.getElementById('fixtures'),
-	handler: function(direction) {
-		if (direction == "down") {
-			showMainList();
-		}	
-	}
-})
+// var fixtures = new Waypoint({
+// 	element: document.getElementById('fixtures'),
+// 	handler: function(direction) {
+// 		if (direction == "down") {
+// 			showMainList();
+// 		}
+// 	}
+// })
 
-var wcfixtures = new Waypoint({
-  element: document.getElementById('wc-fixtures'),
-  handler: function(direction) {
-    if (direction == "down") {
-    	showWCFix();
-    } else if (direction == "up") {
-    	hideWCFix();
-    }
-  }
-});
+// var wcfixtures = new Waypoint({
+//   element: document.getElementById('wc-fixtures'),
+//   handler: function(direction) {
+//     if (direction == "down") {
+//     	showWCFix();
+//     } else if (direction == "up") {
+//     	hideWCFix();
+//     }
+//   }
+// });
 
-var wwcfixtures = new Waypoint({
-  element: document.getElementById('wwc-fixtures'),
-  handler: function(direction) {
-    if (direction == "down") {
-    	showWWCFix();
-    } else if (direction == "up") {
-    	hideWWCFix();
-    }
-  }
-});
+// var wwcfixtures = new Waypoint({
+//   element: document.getElementById('wwc-fixtures'),
+//   handler: function(direction) {
+//     if (direction == "down") {
+//     	showWWCFix();
+//     } else if (direction == "up") {
+//     	hideWWCFix();
+//     }
+//   }
+// });
 
 var field1 = "Field 1 - Morty";
 var field2 = "Field 2 - Chicago Fire";
@@ -60,76 +60,88 @@ var field4 = "Field 4 - Norris";
 var field5 = "Field 5 - Kind";
 var field6 = "Field 6 - Intl. Office";
 
+// Points for the Group Stage
 var points = 	[
 					["#group-a", "Group A",
-						["Cayman Islands", "ky", 7],
-						["Turkey", "tr", 7],
-						["Puerto Rico", "pr", 3],
-						["Sudan", "sd", 0], "group-a"],
+						["Costa Rica", "cr", 0],
+						["Sweden", "se", 0],
+						["China", "cn", 0],
+						["Djibouti", "dj", 0], "group-a"],
 					["#group-b", "Group B",
-						["India", "in", 9],
-						["Vietnam", "vn", 4],
-						["Spain", "es", 4],
-						["Thailand", "th", 0], "group-b"],
+						["Iran", "ir", 0],
+						["Turkey", "tr", 0],
+						["Argentina", "ar", 0],
+						["Denmark", "dk", 0], "group-b"],
 					["#group-c", "Group C",
-						["Iran", "ir", 9],
-						["Ivory Coast", "ci", 4],
-						["Iceland", "is", 4],
-						["Italy", "it", 0], "group-c"],
+						["Yemen", "ye", 0],
+						["Bahamas", "bs", 0],
+						["Cyprus", "cy", 0],
+						["Columbia", "co", 0], "group-c"],
 					["#group-d", "Group D",
-						["Nigeria", "ng", 7],
-						["San Marino", "sm", 5],
-						["USA", "us", 4],
-						["South Korea", "kr", 0], "group-d"],
+						["Iceland", "is", 0],
+						["Lebanon", "lb", 0],
+						["Israel", "il", 0],
+						["Ctr. African Rep.", "cf", 0], "group-d"],
 					["#group-e", "Group E",
-						["Wales", "gb-wls", 9],
-						["Pakistan", "pk", 6],
-						["England", "gb-eng", 3],
-						["Denmark", "dk", 0], "group-e"],
+						["Mexico", "mx", 0],
+						["Sao Tome", "st", 0],
+						["Guam", "gu", 0],
+						["South Korea", "kr", 0], "group-e"],
 					["#group-f", "Group F",
-						["Bahamas", "bs", 9],
-						["Argentina", "ar", 3],
-						["Peru", "pe", 3],
-						["Hong Kong", "hk", 3], "group-f"],
+						["Fiji", "fj", 0],
+						["United States", "us", 0],
+						["Somalia", "so", 0],
+						["Spain", "es", 0], "group-f"],
 					["#group-g", "Group G",
-						["France", "fr", 7],
-						["Chile", "cl", 6],
-						["Brazil", "br", 4],
-						["China", "cn", 0], "group-g"],
+						["India", "in", 0],
+						["Kenya", "ky", 0],
+						["Poland", "pl", 0],
+						["Mongolia", "mn", 0], "group-g"],
 					["#group-h", "Group H",
-						["Colombia", "co", 9],
-						["Netherlands", "nl", 4],
-						["Solomon Islands", "sb", 1],
-						["Kazakhstan", "kz", 1], "group-h"]
+						["Cameroon", "cm", 0],
+						["Portugal", "pt", 0],
+						["Italy", "it", 0],
+						["Croatia", "hr", 0], "group-h"],
+					["#group-i", "Group I",
+				    ["Nigeria", "ng", 0],
+						["Ireland", "ie", 0],
+						["England", "gb-eng", 0],
+						["Hong Kong", "hk", 0], "group-i"],
+					["#group-j", "Group J",
+						["Belgium", "be", 0],
+						["Cuba", "cu", 0],
+						["Vietnam", "vn", 0],
+						["Chad", "td", 0], "group-j"]
 				];
 
-var pointsw = [
-					["#group-a-w", "Group A",
-						["Djibouti", "dj", 15],
-						["United States", "us", 10],
-						["France", "fr", 10],
-						["Denmark", "dk", 6],
-						["Iceland", "is", 3],
-						["Sweden", "se", 0], "group-a-w"]
+// var pointsw = [
+// 					["#group-a-w", "Group A",
+// 						["Djibouti", "dj", 0],
+// 						["United States", "us", 0],
+// 						["France", "fr", 0],
+// 						["Denmark", "dk", 0],
+// 						["Iceland", "is", 0],
+// 						["Sweden", "se", 0], "group-a-w"]
+//
+// 				];
 
-				];
-
+// Fixtures: Results of the games
 var groups = 	[
-					["#group-a-f", 
+					["#group-a-f",
 						[field1, "April 22, 5:30 PM", "Cayman Islands", "ky", "Puerto Rico", "pr", "2 : 1"],
 						[field2, "April 22, 5:30 PM", "Sudan", "sd", "Turkey", "tr", "0 : 3"],
 						[field5, "April 22, 7:45 PM", "Cayman Islands", "ky", "Turkey", "tr", "0 : 0"],
 						[field6, "April 22, 7:45 PM", "Sudan", "sd", "Puerto Rico", "pr", "0 : 4"],
 						[field1, "April 23, 8:30 AM", "Sudan", "sd", "Cayman Islands", "ky", "0 : 7"],
 						[field2, "April 23, 8:30 AM", "Puerto Rico", "pr", "Turkey", "tr", "0 : 1"]],
-					["#group-b-f", 
+					["#group-b-f",
 						[field3, "April 22, 5:30 PM", "India", "in", "Thailand", "th", "5 : 0"],
 						[field1, "April 22, 6:15 PM", "Vietnam", "vn", "Spain", "es", "0 : 0"],
 						[field5, "April 22, 8:30 PM", "India", "in", "Vietnam", "vn", "2 : 0"],
 						[field6, "April 22, 8:30 PM", "Thailand", "th", "Spain", "es", "1 : 3"],
 						[field3, "April 23, 8:30 AM", "India", "in", "Spain", "es", "1 : 0"],
 						[field4, "April 23, 8:30 AM", "Vietnam", "vn", "Thailand", "th", "7 : 1"]],
-					["#group-c-f", 
+					["#group-c-f",
 						[field2, "April 22, 6:15 PM", "Ivory Coast", "ci", "Iceland", "is", "1 : 1"],
 						[field3, "April 22, 6:15 PM", "Iran", "ir", "Italy", "it", "2 : 0"],
 						[field4, "April 22, 8:30 PM", "Ivory Coast", "ci", "Iran", "ir", "0 : 2"],
@@ -143,7 +155,6 @@ var groups = 	[
 						[field2, "April 22, 8:30 PM", "San Marino", "sm", "South Korea", "kr", "6 : 0"],
 						[field5, "April 23, 9:15 AM", "United States", "us", "San Marino", "sm", "0 : 0"],
 						[field4, "April 23, 9:15 AM", "Nigeria", "ng", "South Korea", "kr", "10 : 0"]],
-
 					["#group-e-f",
 						[field6, "April 22, 6:15 PM", "Pakistan", "pk", "Wales", "gb-wls", "0 : 2"],
 						[field6, "April 22, 7:00 PM", "Denmark", "dk", "England", "gb-eng", "0 : 1"],
@@ -165,7 +176,7 @@ var groups = 	[
 						[field5, "April 22, 10:00 PM", "Brazil", "br", "China", "cn", "2 : 0"],
 						[field4, "April 23, 10:45 AM", "Chile", "cl", "China", "cn", "3 : 1"],
 						[field5, "April 23, 10:45 AM", "France", "fr", "Brazil", "br", "0 : 0"]],
-					["#group-h-f", 
+					["#group-h-f",
 						[field3, "April 22, 7:45 PM", "Colombia", "co", "Solomon Islands", "sb", "5 : 0"],
 						[field4, "April 22, 7:45 PM", "Netherlands", "nl", "Kazakhstan", "kz", "3 : 0"],
 						[field1, "April 22, 10:00 PM", "Colombia", "co", "Netherlands", "nl", "2 : 0"],
@@ -192,11 +203,14 @@ var groups = 	[
 
 $(document).ready(function() {
 
+// Fixtures for the group stage
+/*
 	for (var i = 0; i < groups.length; i++) {
 		for (var j = 1; j < groups[i].length; j++) {
 			$(groups[i][0]).append("<div class=\"row fixture-row\"><div class=\"col-md-12\"><div class=\"col-md-2 col-xs-2 game-identifier\"><div class=\"row\"><div class=\"col-md-12\">" + groups[i][j][0] + "</div></div><div class=\"row\"><div class=\"col-md-12\">" + groups[i][j][1] + "</div></div></div><div class=\"col-md-4 col-xs-4 fixture-team\"><span class=\"flag-icon flag-icon-" + groups[i][j][3] + " flag-left\"></span>" + groups[i][j][2] + "</div><div class=\"col-md-2 col-xs-2 fixture-score\">" + groups[i][j][6] + "</div><div class=\"col-md-4 col-xs-4 fixture-team\">" + groups[i][j][4] + "<span class=\"flag-icon flag-icon-" + groups[i][j][5] + " flag-right\"></span></div></div></div>");
 		}
 	}
+	*/
 
 	for (var i = 0; i < points.length; i++) {
 		$(points[i][0]).append("<div class=\"col-md-3 col-xs-6 table-responsive\"><table class=\"table table-striped\"><thead><tr><th class=\"table-head\">" + points[i][1] + "</th><th class=\"table-head points-head\">Pts</th></tr></thead><tbody id=\"tbody-" + points[i][6] + "\">");
@@ -206,12 +220,12 @@ $(document).ready(function() {
 		$(points[i][0]).append("</tbody></table></div>");
 	}
 
-	for (var i = 0; i < pointsw.length; i++) {
-		$(pointsw[i][0]).append("<div class=\"col-md-12 table-responsive\"><table class=\"table table-striped\"><thead><tr><th class=\"table-head\">" + pointsw[i][1] + "</th><th class=\"table-head points-head\">Pts</th></tr></thead><tbody id=\"tbody-" + pointsw[i][8] + "\">");
-		for (var j = 2; j < 8; j++) {
-			$("#tbody-" + pointsw[i][8]).append("<tr><td class=\"table-body\"><span class=\"flag-icon flag-icon-" + pointsw[i][j][1] + "\"></span> " + pointsw[i][j][0] + "</td><td class=\"points\">" + pointsw[i][j][2] + "</td></tr>");
-		}
-		$(pointsw[i][0]).append("</tbody></table></div>");
-	}
+	// for (var i = 0; i < pointsw.length; i++) {
+	// 	$(pointsw[i][0]).append("<div class=\"col-md-12 table-responsive\"><table class=\"table table-striped\"><thead><tr><th class=\"table-head\">" + pointsw[i][1] + "</th><th class=\"table-head points-head\">Pts</th></tr></thead><tbody id=\"tbody-" + pointsw[i][8] + "\">");
+	// 	for (var j = 2; j < 8; j++) {
+	// 		$("#tbody-" + pointsw[i][8]).append("<tr><td class=\"table-body\"><span class=\"flag-icon flag-icon-" + pointsw[i][j][1] + "\"></span> " + pointsw[i][j][0] + "</td><td class=\"points\">" + pointsw[i][j][2] + "</td></tr>");
+	// 	}
+	// 	$(pointsw[i][0]).append("</tbody></table></div>");
+	// }
 
 });
