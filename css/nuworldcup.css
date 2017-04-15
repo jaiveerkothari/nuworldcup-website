@@ -130,10 +130,16 @@ p.lead {
     font-size: 24px;
 }
 
+p.small-info {
+    text-align: center;
+    font-size: 24px;
+}
+
 p {
     font-family: "Roboto";
     font-size: 16px;
 }
+
 
 li.section-text {
     margin-bottom: 10px;
