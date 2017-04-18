@@ -76,7 +76,7 @@ var points = 	[
 						["Yemen", "ye", 0],
 						["Bahamas", "bs", 0],
 						["Cyprus", "cy", 0],
-						["Columbia", "co", 0], "group-c"],
+						["Colombia", "co", 0], "group-c"],
 					["#group-d", "Group D",
 						["Iceland", "is", 0],
 						["Lebanon", "lb", 0],
