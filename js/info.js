@@ -114,16 +114,18 @@ var points = 	[
 						["Chad", "td", 0], "group-j"]
 				];
 
-// var pointsw = [
-// 					["#group-a-w", "Group A",
-// 						["Djibouti", "dj", 0],
-// 						["United States", "us", 0],
-// 						["France", "fr", 0],
-// 						["Denmark", "dk", 0],
-// 						["Iceland", "is", 0],
-// 						["Sweden", "se", 0], "group-a-w"]
-//
-// 				];
+var pointsw = [
+					["#group-a-w", "Group A",
+						["Switzerland", "ch", 0],
+						["Ireland", "ie", 0],
+						["Denmark", "dk", 0],
+						["Iceland", "is", 0], "group-a-w"],
+					["#group-b-w", "Group B",
+						["Djibouti", "dj", 0],
+						["Norway", "no", 0],
+						["Argentina", "ar", 0],
+						["United States", "us", 0], "group-b-w"]
+				];
 
 // Fixtures: Results of the games
 var groups = 	[
@@ -220,12 +222,12 @@ $(document).ready(function() {
 		$(points[i][0]).append("</tbody></table></div>");
 	}
 
-	// for (var i = 0; i < pointsw.length; i++) {
-	// 	$(pointsw[i][0]).append("<div class=\"col-md-12 table-responsive\"><table class=\"table table-striped\"><thead><tr><th class=\"table-head\">" + pointsw[i][1] + "</th><th class=\"table-head points-head\">Pts</th></tr></thead><tbody id=\"tbody-" + pointsw[i][8] + "\">");
-	// 	for (var j = 2; j < 8; j++) {
-	// 		$("#tbody-" + pointsw[i][8]).append("<tr><td class=\"table-body\"><span class=\"flag-icon flag-icon-" + pointsw[i][j][1] + "\"></span> " + pointsw[i][j][0] + "</td><td class=\"points\">" + pointsw[i][j][2] + "</td></tr>");
-	// 	}
-	// 	$(pointsw[i][0]).append("</tbody></table></div>");
-	// }
+	for (var i = 0; i < pointsw.length; i++) {
+		$(pointsw[i][0]).append("<div class=\"col-md-3 col-xs-6 table-responsive\"><table class=\"table table-striped\"><thead><tr><th class=\"table-head\">" + pointsw[i][1] + "</th><th class=\"table-head points-head\">Pts</th></tr></thead><tbody id=\"tbody-" + pointsw[i][6] + "\">");
+		for (var j = 2; j < 6; j++) {
+			$("#tbody-" + pointsw[i][6]).append("<tr><td class=\"table-body\"><span class=\"flag-icon flag-icon-" + pointsw[i][j][1] + "\"></span> " + pointsw[i][j][0] + "</td><td class=\"points\">" + pointsw[i][j][2] + "</td></tr>");
+		}
+		$(pointsw[i][0]).append("</tbody></table></div>");
+	}
 
 });
