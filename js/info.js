@@ -85,7 +85,7 @@ var points = 	[
 						["Iceland", "is", "3"],
 						["Lebanon", "lb", "1"],
 						["Israel", "il", "0"],
-						["Ctr. African Rep.", "cf", "0"], "group-d"],
+						["Ctr. African Rep.", "cf", "1"], "group-d"],
 					["#group-e", "Group E",
 						["Mexico", "mx", "3"],
 						["Sao Tome", "st", "3"],
