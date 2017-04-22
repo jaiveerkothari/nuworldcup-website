@@ -40,6 +40,8 @@ li.game{
 
 li.game-top{ border-bottom:1px solid #aaa; }
 
+li.blank {border-bottom: 1px solid #fff; }
+
 li.game-spacer{ 
   border-right:1px solid #aaa;
   min-height:40px;

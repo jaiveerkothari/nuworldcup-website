@@ -218,6 +218,9 @@ var groups = 	[
 						[field5, "April 22, 1:45 PM", "Djibouti", "dj", "United States", "us", "- : -"],
 						[field6, "April 22, 1:45 PM", "Norway", "no", "Argentina", "ar", "- : -"]]];
 
+var bracket =[];
+
+var bracketw =[];
 
 $(document).ready(function() {
 
