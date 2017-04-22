@@ -206,7 +206,7 @@ var groups = 	[
 					["#group-a-w-f",
 						[field3, "April 21, 7:15 PM", "Switzerland", "ch", "Denmark", "dk", "2 : 1"],
 						[field1, "April 21, 8:00 PM", "Ireland", "ie", "Iceland", "is", "2 : 0"],
-						[field4, "April 22, 9:45 AM", "Switzerland", "ch", "Ireland", "ie", "0 : 0"],
+						[field4, "April 22, 9:45 AM", "Switzerland", "ch", "Ireland", "ie", "0 : 4"],
 						[field4, "April 22, 10:30 AM", "Denmark", "dk", "Iceland", "is", "2 : 2"],
 						[field9, "April 22, 1:00 PM", "Switzerland", "ch", "Iceland", "is", "1 : 2"],
 						[field4, "April 22, 1:45 PM", "Ireland", "ie", "Denmark", "dk", "- : -"]],
