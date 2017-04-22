@@ -120,8 +120,8 @@ var points = 	[
 
 var pointsw = [
 					["#group-a-w", "Group 1",
-						["Switzerland", "ch", "4"],
-						["Ireland", "ie", "4"],
+						["Switzerland", "ch", "3"],
+						["Ireland", "ie", "6"],
 						["Denmark", "dk", "1"],
 						["Iceland", "is", "4"], "group-a-w"],
 					["#group-b-w", "Group 2",
