@@ -121,14 +121,14 @@ var points = 	[
 var pointsw = [
 					["#group-a-w", "Group 1",
 						["Switzerland", "ch", "3"],
-						["Ireland", "ie", "-"],
+						["Ireland", "ie", "3"],
 						["Denmark", "dk", "0"],
-						["Iceland", "is", "-"], "group-a-w"],
+						["Iceland", "is", "0"], "group-a-w"],
 					["#group-b-w", "Group 2",
-						["Djibouti", "dj", "-"],
-						["Norway", "no", "-"],
-						["Argentina", "ar", "-"],
-						["United States", "us", "-"], "group-b-w"]
+						["Djibouti", "dj", "3"],
+						["Norway", "no", "3"],
+						["Argentina", "ar", "0"],
+						["United States", "us", "0"], "group-b-w"]
 				];
 
 // Fixtures: Results of the games
@@ -205,14 +205,14 @@ var groups = 	[
 						[field5, "April 22, 1:00 PM", "Cuba", "cu", "Vietnam", "vn", "- : -"]],
 					["#group-a-w-f",
 						[field3, "April 21, 7:15 PM", "Switzerland", "ch", "Denmark", "dk", "2 : 1"],
-						[field1, "April 21, 8:00 PM", "Ireland", "ie", "Iceland", "is", "- : -"],
+						[field1, "April 21, 8:00 PM", "Ireland", "ie", "Iceland", "is", "2 : 0"],
 						[field4, "April 22, 9:45 AM", "Switzerland", "ch", "Ireland", "ie", "- : -"],
 						[field4, "April 22, 10:30 AM", "Denmark", "dk", "Iceland", "is", "- : -"],
 						[field9, "April 22, 1:00 PM", "Switzerland", "ch", "Iceland", "is", "- : -"],
 						[field4, "April 22, 1:45 PM", "Ireland", "ie", "Denmark", "dk", "- : -"]],
 					["#group-b-w-f",
-						[field2, "April 21, 8:00 PM", "Djibouti", "dj", "Argentina", "ar", "- : -"],
-						[field3, "April 21, 8:00 PM", "Norway", "no", "United States", "us", "- : -"],
+						[field2, "April 21, 8:00 PM", "Djibouti", "dj", "Argentina", "ar", "6 : 0"],
+						[field3, "April 21, 8:00 PM", "Norway", "no", "United States", "us", "5 : 2"],
 						[field5, "April 22, 10:30 AM", "Djibouti", "dj", "Norway", "no", "- : -"],
 						[field6, "April 22, 10:30 AM", "Argentina", "ar", "United States", "us", "- : -"],
 						[field5, "April 22, 1:45 PM", "Djibouti", "dj", "United States", "us", "- : -"],
