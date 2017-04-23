@@ -215,8 +215,8 @@ var groups = 	[
 						[field3, "April 21, 8:00 PM", "Norway", "no", "United States", "us", "5 : 2"],
 						[field5, "April 22, 10:30 AM", "Djibouti", "dj", "Norway", "no", "1 : 1"],
 						[field6, "April 22, 10:30 AM", "Argentina", "ar", "United States", "us", "0 : 7"],
-						[field5, "April 22, 1:45 PM", "Djibouti", "dj", "United States", "us", "- : -"],
-						[field6, "April 22, 1:45 PM", "Norway", "no", "Argentina", "ar", "- : -"]]];
+						[field5, "April 22, 1:45 PM", "Djibouti", "dj", "United States", "us", "0 : 1"],
+						[field6, "April 22, 1:45 PM", "Norway", "no", "Argentina", "ar", "7 : 0"]]];
 
 var bracket =[];
 
