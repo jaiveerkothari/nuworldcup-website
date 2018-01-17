@@ -26,12 +26,22 @@ body {
     -o-background-size: cover;
 }
 
+#fifa-tourney {
+    font-weight: bold;
+}
+
+#fifa-tourney:active {
+    color: red;
+}
+
 .home-content {
-    background-color: rgb(26,24,25);
+    background-color: white;
+    /*background-color: rgb(26,24,25);*/
+    /*height: 100vh;*/
 }
 
 .main-logo {
-    padding-top: 4em;
+    padding-top: 5em;
     width: 40%;
     margin-left:30%;
     margin-bottom: 7em;
