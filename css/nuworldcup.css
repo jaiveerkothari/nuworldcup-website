@@ -18,6 +18,10 @@ body {
     font-family: "Roboto";
 }
 
+.black-background {
+  background-color: black;
+}
+
 #home {
 /*    background: url("../img/korea-japan-background.jpg") no-repeat center center fixed;*/
     -webkit-background-size: cover;
@@ -35,7 +39,7 @@ body {
 }
 
 .home-content {
-    background-color: white;
+    background-color: black; /* white */
     /*background-color: rgb(26,24,25);*/
     /*height: 100vh;*/
 }
@@ -66,7 +70,9 @@ iframe {
 
 .navbar {
     font-family: "Roboto";
-    background: rgb(35,31,32);
+    /* background: rgb(35,31,32); */
+    /* For Mexico: */
+    background: black;
 }
 
 .navbar-nav {
@@ -148,6 +154,7 @@ p.lead {
 p.small-info {
     text-align: center;
     font-size: 24px;
+    color: white; /* just for black background */
 }
 
 p {
@@ -186,7 +193,7 @@ footer {
         width: 50%;
         margin-left: 25%;
     }
-    
+
     .navbar-nav {
         font-size: 12px;
     }
@@ -200,7 +207,7 @@ footer {
         width:60%;
         margin-left:20%;
     }
-    
+
     .img-portfolio {
         margin-bottom: 15px;
     }
